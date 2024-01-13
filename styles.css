@@ -1,47 +1,73 @@
-
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #f8f9fa;
-    padding: 1em;
-    text-align: center;
-}
-
-#hero h1 {
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
 
-#hero p {
-    color: #666;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
+header {
+    background: url('/path-to-your-header-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #0056b3;
+.logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0.5em;
 }
 
-nav {
-    /* Navigation bar styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-footer {
-    background-color: #f8f9fa;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-content {
     text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 2em 0;
 }
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056a3;
+}
+
+/* Responsive design and other styles go here */
+
