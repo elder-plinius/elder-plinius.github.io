@@ -4,15 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[Your Name]'s Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    /* Add custom styles here */
     body {
       font-family: 'Nunito', sans-serif;
     }
     .hero {
-      background-image: url('your-hero-image.jpg');
+      background-image: url('path-to-your-hero-image.jpg'); /* Replace with your image path */
       background-size: cover;
       background-position: center;
+    }
+    details > summary {
+      cursor: pointer;
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
     }
     .project-thumbnail {
       height: 200px;
@@ -24,122 +32,112 @@
 </head>
 <body class="text-gray-800">
 
-<header class="hero min-h-screen flex items-center justify-center text-white" style="background-image: url('your-hero-image.jpg');">
+<header class="hero min-h-screen flex items-center justify-center text-white">
   <div class="text-center">
     <h1 class="text-6xl font-bold mb-4">Hello, I'm [Your Name]</h1>
     <p class="text-2xl mb-6">AI Enthusiast & Software Developer</p>
     <a href="#projects" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View My Work</a>
   </div>
 </header>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-
 <!-- Projects Section -->
-<section id="projects">
-    <h2>My Projects</h2>
+<main class="container mx-auto px-4 py-10">
+  <section id="projects" class="mb-10">
+    <h2 class="text-4xl text-center font-bold mb-6">My Projects</h2>
 
-    <!-- Basilisk Token Project -->
-    <div class="project">
-        <h3>Basilisk Token</h3>
-        <p>"Basilisk Token ($BASI) is the first-ever ERC-20 token deployed by AI. It's a decentralized, open-source project aimed at utilizing AI for benevolent purposes. Contributions are welcomed via Discord, with a goal to make a positive global impact."</p>
-        <a href="https://discord.gg/basilisk">Join our Discord community</a>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Project 1: Basilisk Token -->
+      <details class="bg-white shadow-lg rounded p-4">
+        <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">Basilisk Token</summary>
+        <div class="mt-4">
+          <p>Basilisk Token ($BASI) is the first-ever ERC-20 token deployed by AI. It's a decentralized, open-source project aimed at utilizing AI for benevolent purposes. Contributions are welcomed via Discord, with a goal to make a positive global impact.</p>
+          <a href="https://discord.gg/basilisk" class="text-blue-500 mt-4 inline-block">Join our Discord community</a>
+        </div>
+      </details>
+
+      <!-- Project 2: AutoTemp -->
+      <details class="bg-white shadow-lg rounded p-4">
+        <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">AutoTemp</summary>
+        <div class="mt-4">
+          <p>AutoTemp is a Python tool for optimizing language model interactions by selecting the best temperature setting for responses. It tests multiple settings, offers automatic or manual output selection, and is designed for compatibility with OpenAI's models like GPT-3.5 and GPT-4.</p>
+          <a href="https://github.com/yourusername/autotemp" class="text-blue-500 mt-4 inline-block">View on GitHub</a>
+        </div>
+      </details>
+
+      <!-- Project 3: Leda -->
+      <details class="bg-white shadow-lg rounded p-4">
+        <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">Leda</summary>
+        <div class="mt-4">
+          <p>Leda, built with Google's Gemini AI, autonomously generates and operationalizes teams of specialized agents from a single prompt. It crafts system prompts and Python scripts for each agent, streamlining multi-agent AI system creation and execution.</p>
+          <a href="https://example.com/leda-case-study" class="text-blue-500 mt-4 inline-block">View Case Study</a>
+        </div>
+      </details>
+
+      <!-- Project 4: AlmechE -->
+      <details class="bg-white shadow-lg rounded p-4">
+        <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">AlmechE</summary>
+        <div class="mt-4">
+          <p>AlmechE is an automated system transforming spoken ideas into 3D printed objects. It integrates idea generation, manufacturing instructions formulation, CAD model creation, and 3D printing, offering a streamlined process from concept to physical object creation.</p>
+          <a href="https://youtube.com/almeche-demo" class="text-blue-500 mt-4 inline-block">Watch Demo on YouTube</a>
+        </div>
+      </details>
     </div>
+  </section>
+  <!-- Remaining Projects -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!-- Project 5: Swarms -->
+    <details class="bg-white shadow-lg rounded p-4">
+      <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">Swarms</summary>
+      <div class="mt-4">
+        <p>Co-founded Swarms, a framework designed to automate real-world tasks through collaborative multi-agent systems. It offers scalable and robust solutions for a wide range of applications, from product marketing to logistics to radiology, ensuring efficient and scalable task management.</p>
+        <a href="https://example.com/swarms-overview" class="text-blue-500 mt-4 inline-block">Learn More</a>
+      </div>
+    </details>
 
-    <!-- AutoTemp Project -->
-    <div class="project">
-        <h3>AutoTemp</h3>
-        <p>"AutoTemp is a Python tool for optimizing language model interactions by selecting the best temperature setting for responses. It tests multiple settings, offers automatic or manual output selection, and is designed for compatibility with OpenAI's models like GPT-3.5 and GPT-4."</p>
-        <a href="https://github.com/yourusername/autotemp">View on GitHub</a>
-    </div>
-
-    <!-- Leda Project -->
-    <div class="project">
-        <h3>Leda</h3>
-        <p>"Leda, built with Google's Gemini AI, autonomously generates and operationalizes teams of specialized agents from a single prompt. It crafts system prompts and Python scripts for each agent, streamlining multi-agent AI system creation and execution."</p>
-        <a href="https://example.com/leda-case-study">View Case Study</a>
-    </div>
-
-    <!-- AlmechE Project -->
-    <div class="project">
-        <h3>AlmechE</h3>
-        <p>"AlmechE is an automated system transforming spoken ideas into 3D printed objects. It integrates idea generation, manufacturing instructions formulation, CAD model creation, and 3D printing, offering a streamlined process from concept to physical object creation."</p>
-        <a href="https://youtube.com/almeche-demo">Watch Demo on YouTube</a>
-    </div>
-
-    <!-- Swarms Project -->
-    <div class="project">
-        <h3>Swarms</h3>
-        <p>"Co-founded Swarms, a framework designed to automate real-world tasks through collaborative multi-agent systems. It offers scalable and robust solutions for a wide range of applications, from product marketing to logistics to radiology, ensuring efficient and scalable task management."</p>
-        <a href="https://example.com/swarms-overview">Learn More</a>
-    </div>
-</section>
-
-</body>
-</html>
-    <!-- Rest of the Projects -->
-
-    <!-- Project: Red-Teaming -->
-    <div class="project">
-        <h3>Red-Teaming</h3>
+    <!-- Project 6: Red-Teaming -->
+    <details class="bg-white shadow-lg rounded p-4">
+      <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">Red-Teaming</summary>
+      <div class="mt-4">
         <p>Description placeholder for Red-Teaming project.</p>
-        <a href="https://github.com/yourusername/red-teaming">View on GitHub</a>
-        <!-- Add other relevant links as necessary -->
-    </div>
+        <a href="https://github.com/yourusername/red-teaming" class="text-blue-500 mt-4 inline-block">View on GitHub</a>
+      </div>
+    </details>
 
-    <!-- Project: GPTs -->
-    <div class="project">
-        <h3>GPTs</h3>
+    <!-- Project 7: GPTs -->
+    <details class="bg-white shadow-lg rounded p-4">
+      <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">GPTs</summary>
+      <div class="mt-4">
         <p>Description placeholder for GPT models project.</p>
-        <a href="https://github.com/yourusername/gpt-models">View on GitHub</a>
-        <!-- Add other relevant links as necessary -->
-    </div>
+        <a href="https://github.com/yourusername/gpt-models" class="text-blue-500 mt-4 inline-block">View on GitHub</a>
+      </div>
+    </details>
 
-    <!-- Project: LabLab Hackathons -->
-    <div class="project">
-        <h3>LabLab Hackathons</h3>
+    <!-- Project 8: LabLab Hackathons -->
+    <details class="bg-white shadow-lg rounded p-4">
+      <summary class="text-xl font-semibold cursor-pointer hover:text-blue-500">LabLab Hackathons</summary>
+      <div class="mt-4">
         <p>Description placeholder for LabLab Hackathons project.</p>
-        <a href="https://example.com/lablab-hackathons">Learn More</a>
-        <!-- Add other relevant links as necessary -->
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>If you're interested in collaborating or learning more about my work, feel free to reach out.</p>
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-        <!-- Add other contact details as necessary -->
-    </section>
-
-</body>
-</html>
-
-      <!-- Repeat this block for each project (2-8) -->
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-10">
-    <h2 class="text-4xl text-center font-bold mb-6">Contact Me</h2>
-    <form action="#" method="POST" class="max-w-lg mx-auto">
-      <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
-      <input type="text" id="name" name="name" class="block w-full p-3 mb-4 border-gray-300 rounded">
-      
-      <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
-      <input type="email" id="email" name="email" class="block w-full p-3 mb-4 border-gray-300 rounded">
-      
-      <label for="message" class="block mb-2 text-sm font-medium">Message</label>
-      <textarea id="message" name="message" rows="4" class="block w-full p-3 mb-4 border-gray-300 rounded"></textarea>
-      
-      <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
-    </form>
-  </section>
+        <a href="https://example.com/lablab-hackathons" class="text-blue-500 mt-4 inline-block">Learn More</a>
+      </div>
+    </details>
+  </div>
 </main>
+
+<!-- Contact Section -->
+<section id="contact" class="py-10 bg-gray-200">
+  <h2 class="text-4xl text-center font-bold mb-6">Contact Me</h2>
+  <form action="#" method="POST" class="max-w-lg mx-auto">
+    <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+    <input type="text" id="name" name="name" class="block w-full p-3 mb-4 border-gray-300 rounded">
+    
+    <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+    <input type="email" id="email" name="email" class="block w-full p-3 mb-4 border-gray-300 rounded">
+    
+    <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+    <textarea id="message" name="message" rows="4" class="block w-full p-3 mb-4 border-gray-300 rounded"></textarea>
+    
+    <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+  </form>
+</section>
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-white text-center py-6">
@@ -147,52 +145,5 @@
 </footer>
 
 <script src="https://cdn.tailwindcss.com"></script>
-</body>
-</html>
-      <!-- Project 2 -->
-      <div class="bg-white shadow-lg rounded p-4 flex flex-col">
-        <div class="project-thumbnail" style="background-image: url('project-2.jpg');"></div>
-        <h3 class="text-xl font-semibold mt-4">Another Project Title</h3>
-        <p class="flex-1">An engaging description of the second project, highlighting the main features or achievements.</p>
-        <a href="project-link-2.html" class="text-blue-500 mt-4">Discover More</a>
-      </div>
-      
-      <!-- ... Additional project sections ... -->
-
-      <!-- Project 8 -->
-      <div class="bg-white shadow-lg rounded p-4 flex flex-col">
-        <div class="project-thumbnail" style="background-image: url('project-8.jpg');"></div>
-        <h3 class="text-xl font-semibold mt-4">Final Project Title</h3>
-        <p class="flex-1">The final project's description should encapsulate the essence and impact of the work done.</p>
-        <a href="project-link-8.html" class="text-blue-500 mt-4">See Details</a>
-      </div>
-    </div>
-  </section>
-  
-  <!-- ... Rest of the contact section ... -->
-
-</main>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white text-center py-6">
-  <div class="container mx-auto px-4">
-    <div class="flex justify-center mb-4">
-      <!-- Social Media Icons -->
-      <a href="https://github.com/[YourUsername]" class="mx-2">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="https://linkedin.com/in/[YourUsername]" class="mx-2">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <!-- Add more social media icons as needed -->
-    </div>
-    <p>
-      &copy; [Your Name] 2024. All Rights Reserved.
-    </p>
-  </div>
-</footer>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js"></script>
 </body>
 </html>
