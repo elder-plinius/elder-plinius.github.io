@@ -1,71 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio by [Your Name]</title>
+  <meta name="description" content="Portfolio showcasing my projects and skills in AI, Machine Learning, and Software Development.">
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <style>
+    /* Additional styles can be placed here */
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow p-4">
-        <ul class="flex justify-around">
-            <li><a href="#gpts" class="text-blue-600 hover:text-blue-800">GPTs</a></li>
-            <li><a href="#red-teaming" class="text-blue-600 hover:text-blue-800">Red-Teaming</a></li>
-            <li><a href="#almeche" class="text-blue-600 hover:text-blue-800">AlmechE</a></li>
-            <li><a href="#leda" class="text-blue-600 hover:text-blue-800">Leda</a></li>
-            <li><a href="#swarms" class="text-blue-600 hover:text-blue-800">Swarms</a></li>
-            <li><a href="#autotemp" class="text-blue-600 hover:text-blue-800">AutoTemp</a></li>
-            <li><a href="#basilisk" class="text-blue-600 hover:text-blue-800">Basilisk</a></li>
-            <li><a href="#lablab" class="text-blue-600 hover:text-blue-800">LabLab Hackathons</a></li>
+  <!-- Navigation -->
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 fixed w-full z-10 top-0">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="#" class="flex">
+        <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">[Your Name]</span>
+      </a>
+      <div class="flex md:order-2">
+        <!-- Mobile menu button -->
+        <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-2.5 mr-1 md:mr-0" id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <li>
+            <a href="#GPTs" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">GPTs</a>
+          </li>
+          <li>
+            <a href="#Red-Teaming" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Red-Teaming</a>
+          </li>
+          <!-- ...other nav items... -->
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Project Sections -->
-    <section id="gpts" class="p-4">
-        <!-- GPTs content here -->
-    </section>
+  <!-- Hero Section -->
+  <header class="bg-white dark:bg-gray-800">
+    <div class="container px-6 py-16 mx-auto">
+      <div class="items-center lg:flex">
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Hello, I'm [Your Name]</h2>
+          <p class="mt-4 text-gray-500 dark:text-gray-400">Welcome to my portfolio where I showcase my work in AI and development.</p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <section id="red-teaming" class="bg-white p-4">
-        <!-- Red-Teaming content here -->
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto mt-10">
+    <h3 class="text-2xl font-bold text-center">My Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <!-- Project Card -->
+      <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="px-6 py-4">
+          <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">GPTs</h4>
+          <p class="leading-normal text-gray-700">An overview of my work with GPT models including applications and research papers.</p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <a href="https://github.com" class="text-blue-500 hover:underline">View on GitHub</a>
+          <!-- More links as needed -->
+        </div>
+      </div>
+      <!-- ...other project cards... -->
+    </div>
+  </section>
 
-    <section id="almeche" class="p-4">
-        <!-- AlmechE content here -->
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white dark:bg-gray-800">
+    <div class="container px-6 py-10 mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white">Get in Touch</h2>
+      <div class="flex justify-center mt-6">
+        <div class="w-full max-w-2xl px-6 py-4 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+          <form action="#" method="POST">
+            <!-- ...form fields and submit button... -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="leda" class="bg-white p-4">
-        <!-- Leda content here -->
-    </section>
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-800">
+    <div class="container px-6 py-4 mx-auto">
+      <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+      <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+        <p class="text-center text-gray-800 dark:text-white">© [Your Name] 2024</p>
+        <div class="flex mt-3 sm:mt-0">
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">Privacy Policy</a>
+          <span class="mx-2">|</span>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <section id="swarms" class="p-4">
-        <!-- Swarms content here -->
-    </section>
-
-    <section id="autotemp" class="bg-white p-4">
-        <!-- AutoTemp content here -->
-    </section>
-
-    <section id="basilisk" class="p-4">
-        <!-- Basilisk content here -->
-    </section>
-
-    <section id="lablab" class="bg-white p-4">
-        <!-- LabLab Hackathons content here -->
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-6 text-center">
-        Portfolio by [Your Name]
-    </footer>
-
+  <script>
+    // Mobile menu toggle script
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
