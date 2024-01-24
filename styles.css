@@ -24,7 +24,7 @@ h1, h2, h3, summary {
 }
 
 p {
-  color: #333; /* Dark grey, for better readability */
+  color: #414a4c; /* Dark grey, for better readability */
 }
 
 
@@ -47,6 +47,10 @@ p {
   padding: 4rem 0;
 }
 
+#projects details summary:hover {
+  color: #ffcc00; /* Retro yellow for hover on summaries */
+}
+
 details {
   background-color: #0a0a0a; /* Dark grey for each project box */
   padding: 1rem;
@@ -64,6 +68,7 @@ summary {
 summary:hover {
   color: #ffcc00; /* Retro yellow for hover on summaries */
 }
+
 
 /* Adjusting space between the project boxes */
 .grid {
