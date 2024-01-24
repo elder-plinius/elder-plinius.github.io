@@ -2,12 +2,12 @@
 
 /* General Body Styles */
 body {
-    font-family: 'Nunito', sans-serif;
-    color: #333;
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: #0f0; /* Neon Green Text */
+    background: #121212; /* Dark Background */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
 }
 
 /* Utility Classes */
@@ -19,7 +19,7 @@ body {
 
 /* Header Styles */
 header.hero {
-    background-image: url('path-to-your-hero-image.jpg');
+    background-image: linear-gradient(135deg, #0f0, #03a9f4, #673ab7); /* Gradient: Green, Blue, Purple */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #03a9f4; /* Light Blue Text */
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -55,19 +55,21 @@ nav ul li a {
 /* Project Section Styles */
 section#projects {
     padding: 40px 0;
+    background: #1a1a1a; /* Slightly Lighter Dark Background */
 }
 
 section#projects h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5rem;
+    color: #673ab7; /* Purple Text */
 }
 
 .project {
-    background: #fff;
+    background: #252525; /* Dark Box Background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
@@ -78,39 +80,18 @@ section#projects h2 {
 
 /* Contact Section Styles */
 section#contact {
-    background: #fff;
+    background: #252525;
     padding: 40px 0;
 }
 
 section#contact form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-section#contact form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-section#contact form input,
-section#contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background: #1e1e1e; /* Dark Form Background */
+    border: 1px solid #0f0; /* Neon Green Border */
 }
 
 /* Footer Styles */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+    background: #121212;
     padding: 20px 0;
 }
 
