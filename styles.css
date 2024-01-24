@@ -42,7 +42,7 @@ p {
   text-align: center;
   color: #ffcc00; /* Retro yellow for contrast against the dark background */
 }
-/* Projects Section */
+
 /* ... Other CSS styles ... */
 
 /* Projects Section */
@@ -50,7 +50,7 @@ p {
   padding: 4rem 0;
 }
 
-details {
+#projects details {
   background-color: #838996; /* Roman Silver for each project box */
   padding: 1rem;
   margin: 1rem;
@@ -58,34 +58,37 @@ details {
   border: 1px solid #6f00ff; /* Electric indigo border */
 }
 
-summary {
+#projects summary {
   font-weight: bold;
-  color: #ffcc00; /* Retro yellow for summaries */
+  color: #6f00ff; /* Electric indigo for summaries */
   cursor: pointer;
 }
 
-summary:hover {
+#projects details summary:hover {
   color: #ffcc00; /* Retro yellow for hover on summaries */
 }
 
-p {
+#projects summary:hover {
+  color: #ffcc00; /* Retro yellow for hover on summaries */
+}
+
+#projects p {
   color: #ffffff; /* White for project description text */
 }
 
-a {
+#projects a {
   color: #6f00ff; /* Electric indigo for project links */
 }
 
-a:hover {
+#projects a:hover {
   color: #9a00ff; /* A lighter shade of electric indigo for hover */
 }
 
 /* Adjusting space between the project boxes */
-.grid {
+#projects .grid {
   gap: 1.5rem;
 }
 
-/* ... Rest of your CSS ... */
 
 
 /* ... Rest of your CSS ... */
