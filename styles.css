@@ -1,98 +1,106 @@
 /* Global Styles */
 body {
-  font-family: 'Nunito', sans-serif;
-  background-color: #121212; /* Dark background for the whole page */
-  color: #ffffff; /* Light text color for readability */
-  line-height: 1.6; /* Spacing between lines */
+  font-family: 'Roboto Mono', monospace;
+  background-color: #0a0a0a; /* Deep black background for the whole page */
+  color: #c0c0c0; /* Off-white text color for readability */
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #6699cc; /* Soft blue for links */
+  text-decoration: none; /* No underline by default */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Typography */
+h1, h2, h3, summary {
+  color: #ffcc00; /* Retro yellow for headings */
+}
+
+p {
+  color: #c0c0c0; /* Keeping the text off-white for readability */
 }
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh; /* Hero section takes 80% of the viewport height */
+  min-height: 80vh;
   background-image: url('path-to-your-hero-image.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
+  color: #ffcc00; /* Retro yellow for contrast against the dark background */
 }
 /* Projects Section */
 #projects {
-  padding: 4rem 0; /* More vertical padding */
+  padding: 4rem 0;
 }
 
 details {
-  background-color: #1c1c1c; /* Slightly lighter than the body for contrast */
+  background-color: #141414; /* Dark grey for each project box */
   padding: 1rem;
   margin: 1rem;
-  border-radius: 0.5rem; /* Rounded corners */
+  border-radius: 0.5rem;
+  border: 1px solid #6699cc; /* Soft blue border */
 }
 
 summary {
   font-weight: bold;
-  color: #00ff00; /* Neon green text for a hacker vibe */
+  color: #ffcc00; /* Retro yellow for summaries */
 }
 
-summary:hover {
-  color: #ffffff; /* White text on hover for contrast */
-}
-
-/* Adding space between the project boxes */
+/* Adjusting space between the project boxes */
 .grid {
   gap: 1.5rem;
 }
 /* Contact Section */
 #contact {
   padding: 2rem 0;
-  background-color: #1a1a1a; /* Dark background for the section */
+  background-color: #1a1a1a;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: #333333; /* Darker input background */
-  color: #ffffff; /* Light text color */
-  border: 1px solid #00ff00; /* Hacker aesthetic green border */
+  background-color: #333333;
+  color: #c0c0c0;
+  border: 1px solid #6699cc; /* Soft blue border for inputs */
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border-radius: 0.25rem; /* Slightly rounded borders */
+  border-radius: 0.25rem;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  border-color: #00ddff; /* Bright blue border for focus */
+  border-color: #ffcc00; /* Retro yellow for focus */
 }
 
 button {
-  background-color: #0055ff; /* Bright blue for buttons */
-  color: #ffffff;
+  background-color: #333333; /* Dark grey for buttons */
+  color: #ffcc00; /* Retro yellow for button text */
   padding: 1rem;
-  border: none;
+  border: 1px solid #ffcc00; /* Retro yellow border */
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0033aa; /* Darker blue on hover */
+  background-color: #ffcc00; /* Retro yellow for button hover */
+  color: #0a0a0a; /* Deep black text on hover */
 }
 /* Footer */
 footer {
-  background-color: #101010; /* Very dark background for the footer */
-  color: #ffffff;
+  background-color: #101010;
+  color: #c0c0c0;
   text-align: center;
   padding: 1rem 0;
-}
-
-footer a {
-  color: #00ddff; /* Consistent link color */
-  text-decoration: none; /* No underline */
-}
-
-footer a:hover {
-  text-decoration: underline; /* Underline on hover */
 }
