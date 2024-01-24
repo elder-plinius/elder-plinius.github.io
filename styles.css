@@ -45,42 +45,40 @@ p {
 
 /* ... Other CSS styles ... */
 
+/* ... Previous CSS styles ... */
+
 /* Projects Section */
 #projects {
   padding: 4rem 0;
 }
 
-#projects details {
-  background-color: #777696c; /* Roman Silver for each project box */
+#projects > div > details {
+  background-color: ##777696; /* Roman Silver for each project box */
   padding: 1rem;
   margin: 1rem;
   border-radius: 0.5rem;
   border: 1px solid #6f00ff; /* Electric indigo border */
 }
 
-#projects summary {
+#projects > div > details summary {
   font-weight: bold;
   color: #6f00ff; /* Electric indigo for summaries */
   cursor: pointer;
 }
 
-#projects details summary:hover {
+#projects > div > details summary:hover {
   color: #ffcc00; /* Retro yellow for hover on summaries */
 }
 
-#projects summary:hover {
-  color: #ffcc00; /* Retro yellow for hover on summaries */
-}
-
-#projects p {
+#projects > div > details p {
   color: #ffffff; /* White for project description text */
 }
 
-#projects a {
+#projects > div > details a {
   color: #6f00ff; /* Electric indigo for project links */
 }
 
-#projects a:hover {
+#projects > div > details a:hover {
   color: #9a00ff; /* A lighter shade of electric indigo for hover */
 }
 
@@ -89,7 +87,7 @@ p {
   gap: 1.5rem;
 }
 
-
+/* ... Rest of your CSS ... */
 
 /* ... Rest of your CSS ... */
 
