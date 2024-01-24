@@ -84,6 +84,12 @@ summary:hover {
   background-color: #1a1a1a;
 }
 
+/* Specific text color for contact-text class within the contact section */
+.contact-text {
+  color: #ffffff; /* Set text color to white */
+}
+
+
 /* Input fields */
 input[type="text"],
 input[type="email"],
