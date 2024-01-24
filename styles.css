@@ -65,12 +65,13 @@ summary {
   background-color: #1a1a1a;
 }
 
+/* Input fields */
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: #333333;
-  color: #c0c0c0;
-  border: 1px solid #6699cc; /* Soft blue border for inputs */
+  background-color: #333; /* Darker background for the input fields */
+  color: #000; /* Black text color */
+  border: 1px solid #6f00ff; /* Electric indigo border for inputs */
   padding: 0.75rem;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
@@ -80,23 +81,35 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  border-color: #ffcc00; /* Retro yellow for focus */
+  border-color: #9a00ff; /* A lighter shade of electric indigo for focus */
 }
 
+/* Links and buttons */
+a,
 button {
-  background-color: #333333; /* Dark grey for buttons */
-  color: #ffcc00; /* Retro yellow for button text */
+  color: #6f00ff; /* Electric indigo text color */
+}
+
+a:hover,
+button:hover {
+  color: #9a00ff; /* A lighter shade of electric indigo for hover */
+}
+
+/* Button specific styles */
+button {
+  background-color: #333; /* Dark grey for buttons */
+  border: 1px solid #6f00ff; /* Electric indigo border */
   padding: 1rem;
-  border: 1px solid #ffcc00; /* Retro yellow border */
   border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffcc00; /* Retro yellow for button hover */
-  color: #0a0a0a; /* Deep black text on hover */
+  background-color: #6f00ff; /* Electric indigo background for button hover */
+  color: #fff; /* White text on hover */
 }
+
 /* Footer */
 footer {
   background-color: #101010;
