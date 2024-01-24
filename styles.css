@@ -56,13 +56,22 @@ details {
 
 summary {
   font-weight: bold;
-  color: #ffcc00; /* Retro yellow for summaries */
+  color: #6f00ff; /* Electric indigo for summaries */
+  cursor: pointer;
+}
+
+summary:hover {
+  color: #ffcc00; /* Retro yellow for hover on summaries */
 }
 
 /* Adjusting space between the project boxes */
 .grid {
   gap: 1.5rem;
 }
+
+/* ... Rest of your CSS ... */
+
+
 /* Contact Section */
 #contact {
   padding: 2rem 0;
