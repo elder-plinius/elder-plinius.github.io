@@ -11,6 +11,7 @@
   
 </head>
 <body class="text-gray-800">
+  <canvas id="galaxyCanvas"></canvas>
 
 <header class="hero min-h-screen flex items-center justify-center text-white">
   <div class="text-center">
@@ -137,3 +138,45 @@
     &copy; Elder Plinius 2024. All Rights Reserved.
   </p>
 </footer>
+<script>
+  const canvas = document.getElementById('galaxyCanvas');
+  const ctx = canvas.getContext('2d');
+
+  let w, h;
+  const setCanvasExtents = () => {
+    w = document.body.clientWidth;
+    h = document.body.clientHeight;
+    canvas.width = w;
+    canvas.height = h;
+  };
+
+  setCanvasExtents();
+  window.onresize = () => {
+    setCanvasExtents();
+  };
+
+  const numStars = 2000;
+  const stars = [];
+  for (let i = 0; i < numStars; i++) {
+    stars.push({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      size: Math.random() * 1.5,
+      color: "white",
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    stars.forEach(star => {
+      ctx.fillStyle = star.color;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.size, 0, 2 * Math.PI);
+      ctx.fill();
+    });
+    
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+</script>
