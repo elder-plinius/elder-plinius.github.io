@@ -1,73 +1,130 @@
-body, html {
+/* styles.css */
+
+/* General Body Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    background: #f4f4f4;
 }
 
+/* Utility Classes */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-header {
-    background: url('/path-to-your-header-background-image.jpg') no-repeat center center;
+/* Header Styles */
+header.hero {
+    background-image: url('path-to-your-hero-image.jpg');
     background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header.hero h1 {
+    font-size: 4rem;
     color: #fff;
 }
 
-.logo {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-top: 0.5em;
-}
-
+/* Navigation Styles */
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
-.hero-content {
+/* Project Section Styles */
+section#projects {
+    padding: 40px 0;
+}
+
+section#projects h2 {
     text-align: center;
-    padding: 2em 0;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
 }
 
-.hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.subtitle {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+.project:hover {
+    transform: translateY(-10px);
 }
 
-.cta-button {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 10px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
+/* Contact Section Styles */
+section#contact {
+    background: #fff;
+    padding: 40px 0;
+}
+
+section#contact form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section#contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+section#contact form input,
+section#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #0056a3;
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Responsive design and other styles go here */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header.hero h1 {
+        font-size: 2.5rem;
+    }
 
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
