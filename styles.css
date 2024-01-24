@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #9a00ff; /* A lighter shade of electric indigo for hover */
+  color: #ffcc00; /* Retro yellow for hover */
   text-decoration: underline; /* Underline on hover */
 }
 
