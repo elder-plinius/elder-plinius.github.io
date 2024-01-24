@@ -46,10 +46,7 @@ p {
 /* ... Other CSS styles ... */
 /* Projects Section */
 /* Projects Section */
-#projects {
-  padding: 4rem 0;
-}
-
+/* Projects Section */
 #projects details {
   background-color: #333333; /* Charcoal for each project box */
   padding: 1rem;
@@ -80,9 +77,7 @@ p {
   color: #FFCC00; /* Yellow for hover on links */
 }
 
-#projects .grid {
-  gap: 1.5rem;
-}
+
 
 
 
