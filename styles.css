@@ -124,10 +124,13 @@ button:hover {
   color: #fff; /* White text on hover */
 }
 
-/* Footer */
 footer {
-  background-color: #101010;
-  color: #c0c0c0;
+  background-color: #101010; /* If this is already very dark, leave it as is */
+  color: #ffffff; /* Change text color to white for better contrast */
   text-align: center;
   padding: 1rem 0;
+  font-size: 1rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the font weight bold for better readability */
+  /* Optional text shadow for depth, be cautious with this */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
