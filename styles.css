@@ -14,13 +14,13 @@ a {
 }
 
 a:hover {
-  color: #ffcc00; /* Retro yellow for hover */
+  color: #fcc200; /* Retro yellow for hover */
   text-decoration: underline; /* Underline on hover */
 }
 
 /* Typography */
 h1, h2, h3, summary {
-  color: #ffcc00; /* Retro yellow for headings */
+  color: #fcc200; /* Retro yellow for headings */
 }
 
 p {
@@ -40,7 +40,7 @@ p {
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: #ffcc00; /* Retro yellow for contrast against the dark background */
+  color: #fcc200; /* Retro yellow for contrast against the dark background */
 }
 
 /* ... Other CSS styles ... */
@@ -62,7 +62,7 @@ p {
 }
 
 #projects summary:hover {
-  color: #FFCC00; /* Retro Yellow for hover on summaries */
+  color: #fcc200; /* Retro Yellow for hover on summaries */
 }
 
 #projects p {
@@ -74,7 +74,7 @@ p {
 }
 
 #projects a:hover {
-  color: #FFCC00; /* Yellow for hover on links */
+  color: #fcc200; /* Yellow for hover on links */
 }
 
 
@@ -120,7 +120,7 @@ button {
 
 a:hover,
 button:hover {
-  color: #ffcc00; /* Retro yellow for hover */
+  color: #fcc200; /* Retro yellow for hover */
 }
 
 /* Button specific styles */
