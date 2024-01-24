@@ -1,132 +1,98 @@
-/* Base styles */
-body, html {
+/* Global Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #121212; /* Dark background for the whole page */
+  color: #ffffff; /* Light text color for readability */
+  line-height: 1.6; /* Spacing between lines */
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Hero section takes 80% of the viewport height */
+  background-image: url('path-to-your-hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* Projects Section */
+#projects {
+  padding: 4rem 0; /* More vertical padding */
 }
 
-/* General styling for the main content */
-main {
-  padding: 2rem;
-}
-
-/* Style for project details, increasing margin */
 details {
-  margin-bottom: 1rem; /* Increase as needed */
-  background: #333; /* Dark background for contrast */
-  color: #fff; /* Light text for readability */
+  background-color: #1c1c1c; /* Slightly lighter than the body for contrast */
   padding: 1rem;
-  border-radius: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem; /* Rounded corners */
 }
 
-/* Override Tailwind's default hover behavior on summary */
-details > summary {
-  list-style: none;
+summary {
+  font-weight: bold;
+  color: #00ff00; /* Neon green text for a hacker vibe */
 }
 
-details > summary::-webkit-details-marker {
-  display: none;
+summary:hover {
+  color: #ffffff; /* White text on hover for contrast */
 }
 
-/* Style for the contact form to ensure text is readable */
+/* Adding space between the project boxes */
+.grid {
+  gap: 1.5rem;
+}
+/* Contact Section */
 #contact {
-  color: #f0f0f0; /* Light color for dark backgrounds */
-  background-color: #222; /* Dark background for the section */
+  padding: 2rem 0;
+  background-color: #1a1a1a; /* Dark background for the section */
 }
 
-/* Input and textarea fields styling */
 input[type="text"],
 input[type="email"],
 textarea {
-  color: #333; /* Dark text for readability */
-  background-color: #fff; /* Light background for the fields */
-  border: 2px solid #00ff00; /* Green border for style */
-  padding: 0.5rem;
+  background-color: #333333; /* Darker input background */
+  color: #ffffff; /* Light text color */
+  border: 1px solid #00ff00; /* Hacker aesthetic green border */
+  padding: 0.75rem;
   margin-bottom: 1rem;
-  width: 100%; /* Ensure full width */
-  box-sizing: border-box; /* Include padding in width */
+  border-radius: 0.25rem; /* Slightly rounded borders */
 }
 
-/* Button styling for better visibility */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00ddff; /* Bright blue border for focus */
+}
+
 button {
-  background-color: #0055ff; /* Blue color for the button */
-  color: white;
-  padding: 0.5rem 1rem;
+  background-color: #0055ff; /* Bright blue for buttons */
+  color: #ffffff;
+  padding: 1rem;
   border: none;
-  cursor: pointer;
   border-radius: 0.25rem;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #003399; /* Darker blue on hover */
+  background-color: #0033aa; /* Darker blue on hover */
 }
-
-/* Ensure links are visible */
-a {
-  color: #00ddff; /* Light blue for links */
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0099cc; /* Darker blue on hover */
-}
-
-/* Footer styling */
+/* Footer */
 footer {
-  padding: 1rem 0;
-  background-color: #222; /* Consistent with the contact section */
-  color: #f0f0f0;
-}
-
-/* Responsive grid for project cards */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-}
-
-/* Styling for project thumbnails */
-.project-thumbnail {
-  height: 200px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 0.5rem;
-}
-
-/* Hero section styling */
-.hero {
-  background-image: url('path-to-your-hero-image.jpg'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
+  background-color: #101010; /* Very dark background for the footer */
+  color: #ffffff;
   text-align: center;
-  padding: 4rem 1rem;
-  color: white;
+  padding: 1rem 0;
 }
 
-/* Title and subtitle in hero */
-.hero h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+footer a {
+  color: #00ddff; /* Consistent link color */
+  text-decoration: none; /* No underline */
 }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-/* Button in hero */
-.hero a {
-  background-color: #0055ff; /* Blue color for the button */
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.hero a:hover {
-  background-color: #003399; /* Darker blue on hover */
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
