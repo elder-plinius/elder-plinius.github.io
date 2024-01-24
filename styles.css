@@ -73,11 +73,11 @@ p {
 }
 
 #projects a {
-  color: #87CEEB; /* Sky Blue for project links */
+  color: #6F00FF; /* Indigo for project links */
 }
 
 #projects a:hover {
-  color: #40E0D0; /* Turquoise for hover on links */
+  color: #FFCC00; /* Yellow for hover on links */
 }
 
 #projects .grid {
