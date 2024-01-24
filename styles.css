@@ -24,8 +24,9 @@ h1, h2, h3, summary {
 }
 
 p {
-  color: #c0c0c0; /* Keeping the text off-white for readability */
+  color: #333; /* Dark grey, for better readability */
 }
+
 
 /* ... Rest of your CSS ... */
 
@@ -105,7 +106,7 @@ button {
 
 a:hover,
 button:hover {
-  color: #9a00ff; /* A lighter shade of electric indigo for hover */
+  color: #ffcc00; /* Retro yellow for hover */
 }
 
 /* Button specific styles */
