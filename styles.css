@@ -48,7 +48,7 @@ p {
 /* Projects Section */
 /* Projects Section */
 #projects details {
-  background-color: #333333; /* Charcoal for each project box */
+  background-color: #757575; /* Charcoal for each project box */
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -57,7 +57,7 @@ p {
 
 #projects summary {
   font-weight: bold;
-  color: #6F00FF; /* Electric Indigo for summaries */
+  color: #0f52ba; /* Electric Indigo for summaries */
   cursor: pointer;
 }
 
@@ -70,7 +70,7 @@ p {
 }
 
 #projects a {
-  color: #6F00FF; /* Indigo for project links */
+  color: #0f52ba; /* Indigo for project links */
 }
 
 #projects a:hover {
