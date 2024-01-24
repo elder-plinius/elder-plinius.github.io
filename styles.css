@@ -2,18 +2,19 @@
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #0a0a0a; /* Deep black background for the whole page */
-  color: #141414; /* Off-white text color for readability */
+  color: #c0c0c0; /* Off-white text color for readability */
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #6699cc; /* Soft blue for links */
+  color: #6f00ff; /* Electric indigo for links */
   text-decoration: none; /* No underline by default */
 }
 
 a:hover {
+  color: #9a00ff; /* A lighter shade of electric indigo for hover */
   text-decoration: underline; /* Underline on hover */
 }
 
@@ -25,6 +26,9 @@ h1, h2, h3, summary {
 p {
   color: #c0c0c0; /* Keeping the text off-white for readability */
 }
+
+/* ... Rest of your CSS ... */
+
 /* Hero Section */
 .hero {
   display: flex;
