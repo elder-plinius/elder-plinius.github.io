@@ -44,52 +44,46 @@ p {
 }
 
 /* ... Other CSS styles ... */
-
-/* ... Previous CSS styles ... */
-
+/* Projects Section */
 /* Projects Section */
 #projects {
   padding: 4rem 0;
 }
 
-#projects > div > details {
-  background-color: ##777696; /* Roman Silver for each project box */
+#projects details {
+  background-color: #333333; /* Charcoal for each project box */
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   border-radius: 0.5rem;
-  border: 1px solid #6f00ff; /* Electric indigo border */
+  border: 1px solid #6F00FF; /* Electric Indigo border */
 }
 
-#projects > div > details summary {
+#projects summary {
   font-weight: bold;
-  color: #6f00ff; /* Electric indigo for summaries */
+  color: #6F00FF; /* Electric Indigo for summaries */
   cursor: pointer;
 }
 
-#projects > div > details summary:hover {
-  color: #ffcc00; /* Retro yellow for hover on summaries */
+#projects summary:hover {
+  color: #FFCC00; /* Retro Yellow for hover on summaries */
 }
 
-#projects > div > details p {
-  color: #ffffff; /* White for project description text */
+#projects p {
+  color: #FFFFFF; /* White for project description text */
 }
 
-#projects > div > details a {
-  color: #6f00ff; /* Electric indigo for project links */
+#projects a {
+  color: #87CEEB; /* Sky Blue for project links */
 }
 
-#projects > div > details a:hover {
-  color: #9a00ff; /* A lighter shade of electric indigo for hover */
+#projects a:hover {
+  color: #40E0D0; /* Turquoise for hover on links */
 }
 
-/* Adjusting space between the project boxes */
 #projects .grid {
   gap: 1.5rem;
 }
 
-/* ... Rest of your CSS ... */
-
-/* ... Rest of your CSS ... */
 
 
 /* Contact Section */
