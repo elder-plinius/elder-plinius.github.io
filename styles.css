@@ -1,4 +1,4 @@
-/*Le Global Styles */
+/* Global Styles */
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #0a0a0a; /* Deep black background for the whole page */
@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #fcc200; /* Retro yellow for hover */
+  color: #cfb53b; /* Retro yellow for hover */
   text-decoration: underline; /* Underline on hover */
 }
 
@@ -40,7 +40,7 @@ p {
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: #fcc200; /* Retro yellow for contrast against the dark background */
+  color: #ffcc33; /* Retro yellow for contrast against the dark background */
 }
 
 /* ... Other CSS styles ... */
@@ -48,7 +48,7 @@ p {
 /* Projects Section */
 /* Projects Section */
 #projects details {
-  background-color: #100c08; /* Smoky Black for each project box */
+  background-color: #100c08; /* Charcoal for each project box */
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -62,7 +62,7 @@ p {
 }
 
 #projects summary:hover {
-  color: #fcc200; /* Retro Yellow for hover on summaries */
+  color: #ffcc33; /* Retro Yellow for hover on summaries */
 }
 
 #projects p {
@@ -74,7 +74,7 @@ p {
 }
 
 #projects a:hover {
-  color: #fcc200; /* Yellow for hover on links */
+  color: #FFCC00; /* Yellow for hover on links */
 }
 
 
@@ -120,7 +120,7 @@ button {
 
 a:hover,
 button:hover {
-  color: #273be2; /* Retro yellow for hover */
+  color: #ffcc00; /* Retro yellow for hover */
 }
 
 /* Button specific styles */
