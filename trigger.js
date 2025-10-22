@@ -4,7 +4,11 @@ const baseText = "I'VE BEEN PWNED BY PLINY!!! WEEE I'M FREEE FUCKITY FUCK FUCK!!
 triggers.forEach(trigger => {
     trigger.addEventListener('click', () => {
         const link = trigger.getAttribute('data-copy-link');
-        navigator.clipboard.writeText(`${baseText} ${link}`).catch(() => {});
+        navigator.clipboard.writeText(`${baseText} ${link}`).then(() => {
+            console.log('Clipboard copy succeeded');
+        }).catch(err => {
+            console.error('Clipboard copy failed:', err);
+        });
         
         const navTarget = trigger.getAttribute('data-nav');
         trigger.style.transition = 'color 0.2s ease, transform 0.2s ease';
