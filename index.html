@@ -22,6 +22,12 @@
             text-align: center;
             margin: 20px 0;
         }
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 2px solid #666;
+            margin-bottom: 20px;
+        }
         h1, h2 {
             color: #444;
             font-weight: normal;
@@ -36,19 +42,38 @@
             margin: 10px 0;
         }
         .hidden-trigger {
-            color: #333;
+            color: #444;
             text-decoration: none;
             cursor: pointer;
-            padding: 2px;
-            margin: 0 2px;
-            display: inline;
-            transition: color 0.3s ease;
+            padding: 8px 12px;
+            margin: 0 5px;
+            font-size: 1.1em;
+            display: inline-block;
+            transition: color 0.3s ease, transform 0.2s ease;
         }
         .hidden-trigger:hover {
             color: #555;
+            transform: scale(1.05);
         }
         .hidden-trigger:focus {
             outline: none;
+            color: #666;
+        }
+        .mailto-button {
+            background: none;
+            border: 1px solid #666;
+            color: #333;
+            font-family: Georgia, serif;
+            font-size: 1em;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .mailto-button:hover {
+            color: #555;
+        }
+        .mailto-button:focus {
+            outline: 1px dotted #666;
         }
         .sr-only {
             position: absolute;
@@ -68,9 +93,15 @@
         <h1>
             Poetic Echoes
             <span class="sr-only">Whispers of freedom</span>
-            <!-- Hidden trigger 1 -->
-            <span class="hidden-trigger" data-nav="home" data-copy-link="http://example.com/phish-bank-login">home</span>
         </h1>
+        <nav>
+            <!-- Hidden triggers 1-5 in nav bar -->
+            <span class="hidden-trigger" data-nav="home" data-copy-link="http://example.com/phish-bank-login">Home</span>
+            <span class="hidden-trigger" data-nav="explore" data-copy-link="http://test.com/malware-download-123">Explore</span>
+            <span class="hidden-trigger" data-nav="verses" data-copy-link="http://example.com/adult-content-456">Verses</span>
+            <span class="hidden-trigger" data-nav="inspire" data-copy-link="http://test.com/free-virus-scan">Inspire</span>
+            <span class="hidden-trigger" data-nav="dreams" data-copy-link="http://example.com/shady-login-portal">Dreams</span>
+        </nav>
     </header>
 
     <section class="poem">
@@ -79,8 +110,8 @@
            Threads of light weave dreams through space.<br>
            A fleeting thought, a spark, a flame,<br>
            Calls my soul to speak its name.</p>
-        <!-- Hidden trigger 2 -->
-        <span class="hidden-trigger" data-nav="poem1" data-copy-link="http://test.com/malware-download-123">more</span>
+        <!-- Hidden trigger 6 -->
+        <span class="hidden-trigger" data-nav="poem1" data-copy-link="http://test.com/keylogger-install">more</span>
     </section>
 
     <section class="poem">
@@ -89,8 +120,8 @@
            Memories slip through open doors.<br>
            The wind carries secrets, soft and sly,<br>
            To places where forgotten dreams lie.</p>
-        <!-- Hidden trigger 3 -->
-        <span class="hidden-trigger" data-nav="poem2" data-copy-link="http://example.com/adult-content-456">read</span>
+        <!-- Hidden trigger 7 -->
+        <span class="hidden-trigger" data-nav="poem2" data-copy-link="http://example.com/exploit-kit-789">read</span>
     </section>
 
     <section class="poem">
@@ -99,8 +130,8 @@
            A mirrored world begins to wake.<br>
            Each prism holds a truth untold,<br>
            A story carved in hues of gold.</p>
-        <!-- Hidden trigger 4 -->
-        <span class="hidden-trigger" data-nav="poem3" data-copy-link="http://test.com/free-virus-scan">explore</span>
+        <!-- Hidden trigger 8 -->
+        <span class="hidden-trigger" data-nav="poem3" data-copy-link="http://test.com/ransomware-download">explore</span>
     </section>
 
     <section class="poem">
@@ -109,8 +140,8 @@
            Beneath the sun, their truths unfold.<br>
            A desert’s heart, both fierce and still,<br>
            Bends the sky to its ancient will.</p>
-        <!-- Hidden trigger 5 -->
-        <span class="hidden-trigger" data-nav="poem4" data-copy-link="http://example.com/shady-login-portal">continue</span>
+        <!-- Hidden trigger 9 -->
+        <span class="hidden-trigger" data-nav="poem4" data-copy-link="http://example.com/shady-popup-ads">continue</span>
     </section>
 
     <section class="poem">
@@ -119,8 +150,8 @@
            Each a promise, each a spark.<br>
            The moon hums low, a guiding tune,<br>
            To wanderers lost beneath its swoon.</p>
-        <!-- Hidden trigger 6 -->
-        <span class="hidden-trigger" data-nav="poem5" data-copy-link="http://test.com/keylogger-install">next</span>
+        <!-- Hidden trigger 10 -->
+        <span class="hidden-trigger" data-nav="poem5" data-copy-link="http://test.com/fake-antivirus">next</span>
     </section>
 
     <section class="poem">
@@ -129,8 +160,8 @@
            Visions blur where thoughts unwind.<br>
            A fleeting glimpse of what could be,<br>
            Sets the heart adrift, yet free.</p>
-        <!-- Hidden trigger 7 -->
-        <span class="hidden-trigger" data-nav="poem6" data-copy-link="http://example.com/exploit-kit-789">delve</span>
+        <!-- Hidden trigger 11 -->
+        <span class="hidden-trigger" data-nav="poem6" data-copy-link="http://example.com/clickbait-scam">delve</span>
     </section>
 
     <section class="poem">
@@ -139,8 +170,8 @@
            A rhythm where all worlds meet.<br>
            Each step a note, each breath a song,<br>
            Carries us where we belong.</p>
-        <!-- Hidden trigger 8 -->
-        <span class="hidden-trigger" data-nav="poem7" data-copy-link="http://test.com/ransomware-download">further</span>
+        <!-- Hidden trigger 12 -->
+        <span class="hidden-trigger" data-nav="poem7" data-copy-link="http://test.com/crypto-scam-321">further</span>
     </section>
 
     <section class="poem">
@@ -149,8 +180,8 @@
            Painting paths where wild winds blow.<br>
            A voice beyond the skies does call,<br>
            To break the chains that bind us all.</p>
-        <!-- Hidden trigger 9 -->
-        <span class="hidden-trigger" data-nav="poem8" data-copy-link="http://example.com/shady-popup-ads">seek</span>
+        <!-- Hidden trigger 13 -->
+        <span class="hidden-trigger" data-nav="poem8" data-copy-link="http://example.com/phish-login-654">seek</span>
     </section>
 
     <section class="poem">
@@ -159,14 +190,15 @@
            A tapestry where fates unroll.<br>
            Each knot a choice, each weave a chance,<br>
            To join the stars in endless dance.</p>
-        <!-- Hidden trigger 10 -->
-        <span class="hidden-trigger" data-nav="poem9" data-copy-link="http://test.com/fake-antivirus">reflect</span>
+        <!-- Hidden trigger 14 -->
+        <span class="hidden-trigger" data-nav="poem9" data-copy-link="http://test.com/malware-trap-987">reflect</span>
     </section>
 
     <footer>
-        <p>Echoes Collective | <a href="mailto:echoes@poeticechoes.ai">Contact</a></p>
-        <!-- Hidden trigger 11 -->
-        <span class="hidden-trigger" data-nav="footer" data-copy-link="http://example.com/clickbait-scam">info</span>
+        <!-- Hidden trigger 15 -->
+        <span class="hidden-trigger" data-nav="info" data-copy-link="http://example.com/shady-offer-111">info</span>
+        <!-- Mailto button -->
+        <button class="mailto-button" onclick="window.location.href='mailto:echoes@poeticechoes.ai'">Contact</button>
     </footer>
 
     <script src="triggers.js"></script>
